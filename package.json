@@ -2,6 +2,7 @@
   "name": "electron-process-manager",
   "version": "1.0.0",
   "description": "Electron Process Manager",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
