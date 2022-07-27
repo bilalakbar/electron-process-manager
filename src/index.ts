@@ -65,7 +65,10 @@ class _ElectronProcessManager {
       );
     });
 
-    this.window.on("close", () => this.cleanUp());
+    this.window.on("close", () => {
+      this.window = undefined;
+      this.cleanUp();
+    });
   }
 
   processMetrics() {
