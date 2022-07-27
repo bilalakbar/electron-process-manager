@@ -46,7 +46,10 @@ var _ElectronProcessManager = /** @class */ (function () {
                 return (_a = _this.window) === null || _a === void 0 ? void 0 : _a.webContents.send("process-metrics", _this.processMetrics());
             }, _this.options.interval);
         });
-        this.window.on("close", function () { return _this.cleanUp(); });
+        this.window.on("close", function () {
+            _this.window = undefined;
+            _this.cleanUp();
+        });
     };
     _ElectronProcessManager.prototype.processMetrics = function () {
         return (0, utils_1.transformProcessMetrics)(electron_1.app.getAppMetrics());
