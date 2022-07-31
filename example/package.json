@@ -1,0 +1,14 @@
+{
+  "name": "electron-process-manager-example",
+  "version": "1.0.0",
+  "description": "An example of using Electron Process Manager in an App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bilal Akbar",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^19.0.10"
+  }
+}
